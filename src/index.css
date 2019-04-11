@@ -13,3 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.night {
+  background-color: #333;
+  color: #fff;
+  border-color: red;
+}
