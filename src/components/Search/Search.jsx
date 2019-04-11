@@ -9,7 +9,7 @@ function Search() {
       method="get"
       autoComplete="off"
     >
-      <input type="text" name="q" id="" placeholder="Search Google" autoFocus />
+      <input type="text" name="q" id="" placeholder="Search Google" />
     </form>
   );
 }
