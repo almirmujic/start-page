@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .night {
-  background-color: #333;
+  background-color: #323639;
   color: #fff;
-  border-color: red;
+  border-color: #fff;
 }
