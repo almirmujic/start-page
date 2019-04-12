@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import '../../main';
+import Greeting from '../Greeting/Greeting';
+import Clock from '../Clock/Clock';
 import Search from '../Search/Search';
 import Headlines from '../Headlines/Headlines';
 import Bookmarks from '../Bookmarks/Bookmarks';
@@ -7,14 +8,17 @@ import ModeBtn from '../ModeBtn/ModeBtn';
 import './App.css';
 
 function App() {
+  //State
   const [isNightMode, setMode] = useState(false);
   const mode = () => setMode(!isNightMode);
 
   return (
     <div className={isNightMode ? 'night' : ''}>
       <div className="wrapper">
-        <ModeBtn mode={mode} />
         <div className="container">
+          <ModeBtn mode={mode} />
+          <Greeting />
+          <Clock />
           <Search />
           <Bookmarks />
           <Headlines />
