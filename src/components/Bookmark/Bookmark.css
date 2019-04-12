@@ -1,0 +1,7 @@
+.bookmark {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
