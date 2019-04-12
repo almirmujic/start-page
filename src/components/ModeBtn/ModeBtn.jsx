@@ -3,9 +3,9 @@ import './ModeBtn.css';
 
 function ModeBtn({ mode }) {
   return (
-    <label class="switch">
+    <label className="switch">
       <input type="checkbox" onClick={mode} />
-      <span class="slider round" />
+      <span className="slider round" />
     </label>
   );
 }
