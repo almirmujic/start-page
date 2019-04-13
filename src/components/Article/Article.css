@@ -1,0 +1,14 @@
+.Article {
+  border: 1px solid;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Article p {
+  padding: 5.75px 10px;
+}
