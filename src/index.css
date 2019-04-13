@@ -18,12 +18,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.night {
-  background-color: #323639;
-  color: #fff;
-  height: 100vh;
-}
-
-.night_border {
-  border-color: #fff;
-}

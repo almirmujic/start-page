@@ -6,7 +6,13 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 4rem;
+  row-gap: 4rem;
+}
+
+.night {
+  background-color: #323639;
+  color: #fff;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -17,6 +23,7 @@
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: none;
   }
   h1 {
     grid-column: 1/3;
