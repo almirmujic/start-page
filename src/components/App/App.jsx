@@ -10,10 +10,11 @@ import './App.css';
 function App() {
   //State
   const [isNightMode, setMode] = useState(false);
+
   const mode = () => setMode(!isNightMode);
 
   return (
-    <div className={isNightMode ? 'night' : ''}>
+    <div className={isNightMode ? 'night' : 'light'}>
       <div className="wrapper">
         <div className="container">
           <ModeBtn mode={mode} />
