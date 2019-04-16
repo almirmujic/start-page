@@ -27,13 +27,38 @@ const GithubIcon = styled(Github)`
   width: 100%;
 `;
 
+let urls = [
+  {
+    title: 'Gmail',
+    url: 'https://www.google.com/gmail',
+    icon: <GmailIcon />
+  },
+  {
+    title: 'Github',
+    url: 'https://www.github.com/',
+    icon: <GithubIcon />
+  },
+  {
+    title: 'Youtube',
+    url: 'https://www.youtube.com/',
+    icon: <YoutubeIcon />
+  },
+  {
+    title: 'Reddit',
+    url: 'https://www.reddit.com/',
+    icon: <RedditIcon />
+  }
+];
+
+let [gmail, github, youtube, reddit] = urls;
+
 function Bookmarks() {
   return (
     <div className="bookmarks">
-      <Bookmark icon={<GmailIcon />} title={'Gmail'} />
-      <Bookmark icon={<GithubIcon />} title={'Github'} />
-      <Bookmark icon={<YoutubeIcon />} title={'Youtube'} />
-      <Bookmark icon={<RedditIcon />} title={'Reddit'} />
+      <Bookmark href={gmail.url} icon={gmail.icon} title={gmail.title} />
+      <Bookmark href={github.url} icon={github.icon} title={github.title} />
+      <Bookmark href={youtube.url} icon={youtube.icon} title={youtube.title} />
+      <Bookmark href={reddit.url} icon={reddit.icon} title={reddit.title} />
     </div>
   );
 }
