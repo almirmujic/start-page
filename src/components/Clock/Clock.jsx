@@ -16,7 +16,11 @@ const Clock = () => {
     setTime(new Date());
   }
 
-  return <div className="clock">{getTime.toLocaleTimeString()}</div>;
+  return (
+    <div className="clock">
+      {getTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+    </div>
+  );
 };
 
 export default Clock;
