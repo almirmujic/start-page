@@ -1,12 +1,12 @@
 import React from 'react';
 import './Bookmark.css';
 
-function Bookmark({ icon, title }) {
+function Bookmark({ icon, title, href }) {
   return (
-    <div className="bookmark">
+    <a href={href} className="bookmark">
       <div>{icon}</div>
       <p>{title}</p>
-    </div>
+    </a>
   );
 }
 
