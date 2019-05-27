@@ -5,6 +5,7 @@
   height: 34px;
   justify-self: end;
   top: 20px;
+  grid-column-start: 2;
 }
 
 .switch input {
@@ -60,8 +61,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .switch {
     grid-column-start: 2;
   }
-}
+} */
