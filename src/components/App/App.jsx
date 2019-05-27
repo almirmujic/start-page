@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Greeting from '../Greeting/Greeting';
 import Clock from '../Clock/Clock';
 import Search from '../Search/Search';
-import Headlines from '../Headlines/Headlines';
 import Bookmarks from '../Bookmarks/Bookmarks';
 import ModeBtn from '../ModeBtn/ModeBtn';
 import './App.css';
@@ -22,7 +21,6 @@ function App() {
           <Clock />
           <Search />
           <Bookmarks />
-          <Headlines />
         </div>
       </div>
     </div>
